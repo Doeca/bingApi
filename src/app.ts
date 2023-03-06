@@ -104,7 +104,7 @@ router.get("/reset/:qqid", async (ctx: any) => {
   res.code = -1;
   ctx.body = res;
 })
-const port: number = 3003;
+const port: number = 3004;
 
 //app.use(cors())
 app.use(router.routes());
