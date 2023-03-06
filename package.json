@@ -1,0 +1,31 @@
+{
+  "name": "bingApi",
+  "version": "0.0.1",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsc --build && node ./dist/app.js",
+    "watch": "nodemon --ext js,ts --exec yarn start"
+  },
+  "dependencies": {
+    "@types/dotenv-safe": "^8.1.2",
+    "@types/js-base64": "^3.3.1",
+    "@types/koa": "^2.13.5",
+    "bing-chat": "^0.2.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "dotenv-safe": "^8.2.0",
+    "js-base64": "^3.7.5",
+    "koa": "^2.14.1",
+    "koa-body": "^6.0.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^12.0.0",
+    "koa2-cors": "^2.0.6",
+    "nodemon": "^2.0.21",
+    "ora": "^6.1.2"
+  },
+  "devDependencies": {
+    "@types/koa-router": "^7.4.4",
+    "ts-node": "^10.9.1"
+  }
+}
