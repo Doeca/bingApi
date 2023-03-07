@@ -69,7 +69,7 @@ router.post("/chat/:qqid", koaBody(), async (ctx: any) => {
         let s: string = `[^${i + 1}^]`;
         let t: string = v.seeMoreUrl + "\n\n";
         if (v.imageLink != undefined)
-          t += `[CQ:image,file={v.imageLink}]`;
+          t += `[CQ:image,file=${v.imageLink}]`;
         res.msg = res.msg.replaceAll(s, t);
       });
     }

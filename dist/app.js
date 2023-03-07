@@ -57,7 +57,7 @@ router.post("/chat/:qqid", koaBody(), async (ctx) => {
                 let s = `[^${i + 1}^]`;
                 let t = v.seeMoreUrl + "\n\n";
                 if (v.imageLink != undefined)
-                    t += `[CQ:image,file={v.imageLink}]`;
+                    t += `[CQ:image,file=${v.imageLink}]`;
                 res.msg = res.msg.replaceAll(s, t);
             });
         }
@@ -91,7 +91,7 @@ router.get("/reset/:qqid", async (ctx) => {
     res.code = -1;
     ctx.body = res;
 });
-const port = 3003;
+const port = 3004;
 //app.use(cors())
 app.use(router.routes());
 console.log(`bing Api start listening at ${port}`);
